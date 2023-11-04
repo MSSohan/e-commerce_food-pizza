@@ -70,7 +70,8 @@
                     <h2>Chicken Saucy Pizza</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eveniet nihil modi laboriosam a recusandae velit magnam
                     aliquam tenetur corporis!</p>
-                    <button type="submit">Add to Cart</button>
+                    <button type="submit" onclick="updateClickCount()">Add to Cart</button>
+                    <p>Button clicked <span id="clickCount">0</span> times.</p>
                 </div>
             </div>
             <div class="pizza-card">
@@ -158,6 +159,15 @@
     </div>
     <!-- Contact Section Ends -->
 
+    <script>
+        let clickCount = 0; // Initialize a variable to keep track of the click count.
+
+        // Function to update the click count and display it.
+        function updateClickCount() {
+            clickCount++; // Increment the click count.
+            document.getElementById("clickCount").textContent = clickCount; // Update the displayed count.
+        }
+    </script>
 
 <!-- JS Section Starts -->
 <script>
