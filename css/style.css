@@ -77,6 +77,10 @@
   border: 1px solid white;
   cursor: pointer;
 }
+.cart span {
+  color: #00e9f1;
+  margin-right: 2px;
+}
 .main {
   margin: 200px 250px;
 }
